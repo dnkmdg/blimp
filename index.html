@@ -1,61 +1,28 @@
 <!doctype html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Blimp by foag</title>
-
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+    <meta charset="UTF-8">
+    <style type="text/css">
+      @import "http://fonts.googleapis.com/css?family=Exo+2:400,400italic,900italic";
+      html,body{height:100%;margin:0;padding:0;font-family:'Exo 2','Helvetica Neue',Helvetica,Arial,Sans-serif;font-weight:400;}
+      h1,h2,h3{font-family:'Exo 2'!important;font-style:italic;font-weight:900;}
+      a {color: #003442;}
+      .loading {position: fixed; top: 0; bottom:0; left: 0; right: 0; background: #003442; color: #f3f3f3; z-index: 9999; text-align: center; display: table; width: 100%; height: 100%;}
+      .loading .cell {display: table-cell; vertical-align: middle;}
+      .loading .logo {float:none; font-size: 4em;}
+      .loading .big-load a {display: inline-block; padding: .5em .9em;background: #f3f3f3;margin-top: 1em; margin-right: .5em; text-decoration: none;}
+    </style>
+    
+    <title>Blimp</title>
   </head>
   <body>
-    <div class="wrapper">
-      <header>
-        <h1>Blimp</h1>
-        <p>Blind maps ftw!</p>
-
-        <p class="view"><a href="https://github.com/foag/blimp">View the Project on GitHub <small>foag/blimp</small></a></p>
-
-
-        <ul>
-          <li><a href="https://github.com/foag/blimp/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/foag/blimp/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/foag/blimp">View On <strong>GitHub</strong></a></li>
-        </ul>
-      </header>
-      <section>
-        <h1>
-<a id="blimp" class="anchor" href="#blimp" aria-hidden="true"><span class="octicon octicon-link"></span></a>blimp</h1>
-
-<h1>
-<a id="about" class="anchor" href="#about" aria-hidden="true"><span class="octicon octicon-link"></span></a>About</h1>
-
-<p>So far blimp is a proof-of-concept application, built as a christmas present for my girlfriend chr. She's absolutely nuts about blind maps. </p>
-
-<p>Next for Blimp is to make it to GitHub as a shared repository, and maybe get some further development in order to allow better gameplay.</p>
-
-<p>For now the memory takes a hit when too many countries are involved (due to the detailed vectors), but hopefully I'll be able to sort it out. Other quirks to be solved are loading-indicators, saving, entering of name, share result, doge-graphics and so on.</p>
-
-<h1>
-<a id="sources" class="anchor" href="#sources" aria-hidden="true"><span class="octicon octicon-link"></span></a>Sources</h1>
-
-<p>Most of the actual data here comes from the astonishing 
-Mohammed Le Doze's repository <a href="https://mledoze.github.io/countries/">https://mledoze.github.io/countries/</a>. </p>
-
-<p>The map is built with Leaflet with amazing tiles from mapbox.com and the new approximative spellchecking is straightly from fuzzyset.js-repository.</p>
-
-<p>/foag (<a href="mailto:daniel@ikoncept.se">daniel@ikoncept.se</a>)</p>
-      </section>
-      <footer>
-        <p>This project is maintained by <a href="https://github.com/foag">foag</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
+    <div class="loading">
+      <div class="cell">
+        <h1 class="logo">blimp <small>BLIND MAPS FTW!</small></h1>
+        <div class="big-load hidden">
+          <a href="http://dev.icatserver.com/blimp" class="load-yes">Wow, much demo >></a>
+        </div>
+      </div>
     </div>
-    <script src="javascripts/scale.fix.js"></script>
-    
   </body>
 </html>
