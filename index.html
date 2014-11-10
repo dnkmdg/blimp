@@ -6,10 +6,19 @@
     <link rel="stylesheet" href="assets/css/blimp.min.css" />
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
-    
     <title>Blimp</title>
   </head>
   <body>
+    <div class="congrats hidden">
+      <div class="cell">
+        <img src="doge.jpeg" class="fa-spin" style="border-radius: 200px; max-width: 200px; margin: 0 auto;">
+        <h1 class="logo"><span class="points-total">0</span>/<span class="points-max">0</span> points!</h1>
+        <h2><span>WOW Very success!!</span> Much world. Such accomplish! </h2>
+        <div class="big-load">
+          <a href="#" class="reload">Alright, I want a better score >></a>
+        </div>
+      </div>
+    </div>
     <div class="loading">
       <div class="cell">
         <h1 class="logo">blimp <small>BLIND MAPS FTW!</small></h1>
@@ -23,7 +32,7 @@
     <div class="header">
       <h1 class="logo">blimp <small>BLIND MAPS FTW!</small></h1>
       <h2 class="about"><a href="#">!?</a></h2>
-      <h2 class="score">Score: <span class="points-ratio">0</span><!--<span class="points-total">0</span>/<span class="points-max">0</span>--></h2>
+      <h2 class="score">Score: <span class="points-total">0</span>/<span class="points-max">0</span></h2>
     </div>
     <div id="map"></div>
     <div class="control-panel">
@@ -50,10 +59,10 @@
         <fieldset>
           <div class="points">
             <form action="" method="post" class="answer-form">
-              <label for="answer-input"><strong>For <span class="points-text">a full 10</span> points, write the english name:</strong></label>
+              <label for="answer-input"><strong>For <span class="points-text">a full 10</span> points, write the english name:</strong></label><br>
               <input type="text" id="answer-input" name="answer-input" placeholder="Want those 10, yes?"><button type="submit">Go!</button>
             </form>
-            <p class="support-text"></p> 
+            <p class="support-text"></p>
             <button class="big-correct hidden">Next plz! >></button>
           </div>
           
@@ -73,7 +82,7 @@
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="assets/js/simpleStorage.js"></script>
     <script src="assets/js/fuzzyset.js"></script>
-    <script src="assets/js/blimp.0.1.js"></script>
+    <script src="assets/js/blimp.0.2.min.js"></script>
     <script>
       $(document).ready(function(){
 
