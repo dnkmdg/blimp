@@ -1,3 +1,4 @@
+@import http://fonts.googleapis.com/css?family=Exo+2:400,400italic,900italic;
 /*
  * -------------------------------------------------------------------------------
  * "THE BEER-WARE LICENSE":
@@ -10,44 +11,42 @@
  * enough.
  * -------------------------------------------------------------------------------
  */
-
-@import "http://fonts.googleapis.com/css?family=Exo+2:400,400italic,900italic";
 html,body{height:100%;margin:0;padding:0;font-family:'Exo 2','Helvetica Neue',Helvetica,Arial,Sans-serif;font-weight:400;}
 h1,h2,h3{font-family:'Exo 2'!important;font-style:italic;font-weight:900;}
-a {color: #003442;}
-input[type=text], button{padding:5px 7px;display:inline-block;border:1px solid #d3d3d3;font-size:1em;margin:10px 0;font-family:monospace;}
-button {margin-left: -1px;background: #aaa;color: #fff;font-weight: bold;}
+a{color:#003442;}
+input[type=text],button{padding:5px 7px;display:inline-block;border:1px solid #d3d3d3;font-size:1em;margin:10px 0;font-family:monospace;}
+button{margin-left:-1px;background:#aaa;color:#fff;font-weight:700;}
 
 .badge{font-size:.7em;display:inline-block;background:#aaa;padding:.2em .6em;line-height:1.2em;color:#fff;text-transform:uppercase;font-weight:700;border-radius:6px;}
 .list-unstyled{margin:0;padding:0;list-style-type:none;}
-.thin{font-weight: 400;}
-.hidden{display: none;}
+.thin{font-weight:400;}
+.hidden{display:none;}
 
 #map{position:absolute;top:70px;bottom:0;left:0;right:0;}
 
 .header{position:fixed;top:0;right:0;left:0;height:40px;z-index:1099;background:#003442;color:#222;padding:15px;}
-.header .logo, .loading .logo{color:#f3f3f3;margin:0;line-height:1em;float:left;}
-.header .logo small, .loading .logo small{font-size:.7em;font-weight:400;color:#736F66;}
+.header .logo,.loading .logo{color:#f3f3f3;margin:0;line-height:1em;float:left;}
+.header .logo small,.loading .logo small{font-size:.7em;font-weight:400;color:#736F66;}
 .header .about{float:right;color:#f3f3f3;margin:0;font-size:2em;line-height:1em;}
 .header .score{float:right;color:#f3f3f3;margin:0;font-size:2em;line-height:1em;}
-.header .about a{background: #f3f3f3;padding: .1em .3em;margin-left: 1em;border-radius: 2em;color: #003442;text-decoration: none;}
-.header .about a:hover,.header .about a.active{padding: .2em .4em;border-radius: 2em;color: #736F66;}
+.header .about a{background:#f3f3f3;padding:.1em .3em;margin-left:1em;border-radius:2em;color:#003442;text-decoration:none;}
+.header .about a:hover,.header .about a.active{padding:.2em .4em;border-radius:2em;color:#736F66;}
 
-.loading {position: fixed; top: 0; bottom:0; left: 0; right: 0; background: #003442; color: #f3f3f3; z-index: 9999; text-align: center; display: table; width: 100%; height: 100%;}
-.loading .cell {display: table-cell; vertical-align: middle;}
-.loading .logo {float:none; font-size: 4em;}
-.loading .big-load a {display: inline-block; padding: .5em .9em;background: #f3f3f3;margin-top: 1em; margin-right: .5em; text-decoration: none;}
+.loading,.congrats{position:fixed;top:0;bottom:0;left:0;right:0;background:#003442;color:#f3f3f3;z-index:9999;text-align:center;display:table;width:100%;height:100%;}
+.loading .cell,.congrats .cell{display:table-cell;vertical-align:middle;}
+.loading .logo,.congrats .logo{float:none;font-size:4em;}
+.loading .big-load a,.congrats .big-load a{display:inline-block;padding:.5em .9em;background:#f3f3f3;margin-top:1em;margin-right:.5em;text-decoration:none;}
+.congrats{background:#ff00d8;/* Old browsers */background:-moz-linear-gradient(top,#ff00d8 0%,#ff7f00 50%,#10ff00 100%);/* FF3.6+ */background:-webkit-gradient(linear,left top,left bottom,color-stop(0%,#ff00d8),color-stop(50%,#ff7f00),color-stop(100%,#10ff00));/* Chrome,Safari4+ */background:-webkit-linear-gradient(top,#ff00d8 0%,#ff7f00 50%,#10ff00 100%);/* Chrome10+,Safari5.1+ */background:-o-linear-gradient(top,#ff00d8 0%,#ff7f00 50%,#10ff00 100%);/* Opera 11.10+ */background:-ms-linear-gradient(top,#ff00d8 0%,#ff7f00 50%,#10ff00 100%);/* IE10+ */background:linear-gradient(to bottom,#ff00d8 0%,#ff7f00 50%,#10ff00 100%);/* W3C */filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff00d8',endColorstr='#10ff00',GradientType=0);/* IE6-9 */}
+.congrats.hidden{display:none;}
 
-.control-panel{position:absolute;right:0;top:70px;bottom:0;width:30%;background:rgba(255,255,255,.8);color:#736F66;padding:15px; overflow: auto;}
+.control-panel{position:absolute;right:0;top:70px;bottom:0;width:30%;background:rgba(255,255,255,.8);color:#736F66;padding:15px;overflow:auto;}
 .control-panel h2,.control-panel h3,.control-panel fieldset{margin:10px;border:0;}
-.control-panel .hints li a{display:inline-block;line-height: 1.8em;text-decoration: none;}
-.control-panel .hints li img.flag{max-height: 100px;}
-.control-panel .hints li.hint-used {margin: 15px 0;background: rgba(0,0,0,.1);padding: 10px;border-radius: 2px;}
-
-.control-panel .support-text{margin: 0}
-.control-panel .fail{color: #C80E1C;margin: 0;}
-.control-panel .success{color: #B7CF00;margin: 0;}
-.control-panel .big-correct,.control-panel .big-skip{font-size: 2em;padding: .5em 1em;}
-.control-panel .big-skip {font-size: 1em;color: #C80E1C;text-decoration: none;}
-
-.control-panel .info p {margin: 30px;}
+.control-panel .hints li a{display:inline-block;line-height:1.8em;text-decoration:none;}
+.control-panel .hints li img.flag{max-height:100px;}
+.control-panel .hints li.hint-used{margin:15px 0;background:rgba(0,0,0,.1);padding:10px;border-radius:2px;}
+.control-panel .support-text{margin:0;}
+.control-panel .fail{color:#C80E1C;margin:0;}
+.control-panel .success{color:#B7CF00;margin:0;}
+.control-panel .big-correct,.control-panel .big-skip{font-size:2em;padding:.5em 1em;}
+.control-panel .big-skip{font-size:1em;color:#C80E1C;text-decoration:none;}
+.control-panel .info p{margin:30px;}
